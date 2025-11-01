@@ -1,0 +1,156 @@
+/* General Reset and Setup */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header Layout */
+header {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin : 20px;
+}
+
+img{
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Photo Box */
+.photo-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Intro and Nav */
+.intro {
+  flex: 1;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Section Headings */
+section{
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 5px;
+}
+section h2 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Schools Grid */
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.school {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-radius: 12px;
+}
+
+.school .year {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hobbies List */
+#hobbies ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+#hobbies li {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+/* Work Experience */
+#work p {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 0.8rem;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .photo-box {
+    width: 120px;
+    height: 120px;
+  }
+  .intro h1 {
+    font-size: 1.2rem;
+  }
+}
